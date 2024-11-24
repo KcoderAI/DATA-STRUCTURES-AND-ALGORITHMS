@@ -58,9 +58,11 @@ A data structure that maps keys to values for efficient lookup.
 Example: Dictionaries in Python, Maps in Java.
 
 **What are Algorithms?**
+
 Algorithms are step-by-step procedures or formulas for solving problems. They are the heart of computer science, enabling the execution of tasks and solving problems in a structured way.
 
 **Common Types of Algorithms:**
+
 **Sorting Algorithms:**
 
 Organize data in a specific order.
@@ -93,9 +95,10 @@ Example: Depth-First Search (DFS), Breadth-First Search (BFS).
 
 **Why Learn DSA?**
 
-Efficiency: Write code that runs faster and uses resources wisely.
+Efficiency:
+Write code that runs faster and uses resources wisely.
 
-Problem-Solving: Develop a deep understanding of how to approach and solve various types of problems.
+Problem-Solving: 
+Develop a deep understanding of how to approach and solve various types of problems.
 
-Career Growth: Essential for technical interviews and improving coding skills.
 
