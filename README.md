@@ -1,8 +1,10 @@
 # DATA-STRUCTURES-AND-ALGORITHMS
-Introduction
+**Introduction**
+
 This repository is dedicated to enhancing my problem-solving skills by tackling various data structure challenges and applying the algorithms I've been learning. Over time, I've practiced and refined my approach to solving these problems, recognizing their importance in the field.
 
 **What are Data Structures?**
+
 Data structures are ways to organize, manage, and store data to enable efficient access and modification. They are essential for handling data in a structured way, making it easier to perform various operations on it.
 
 **Common Data Structures:**
