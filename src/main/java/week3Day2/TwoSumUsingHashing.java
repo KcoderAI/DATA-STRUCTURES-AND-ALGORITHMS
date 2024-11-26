@@ -1,10 +1,11 @@
 package week3Day2;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 import org.testng.annotations.Test;
 
-public class FindSubArraywith0Sum {
+public class TwoSumUsingHashing {
 	/*
 	 * 
 	* 1) Did I understand the problem? -> If yes, go to next step !!
@@ -60,69 +61,53 @@ public class FindSubArraywith0Sum {
 	* 
 	* 10) If it fails, debug them to solve it !!
 	* */
+	//this two sum problem returns the indices of the 2 integers whose sum is equal to target using hashing. Both TC & SC is O(n).
 	
-/* - Initialise hashmap//hashset also works because values is not necessary. only boolean return.
-* iterate the array and load entries
-* before adding check if nums[i] is already there and i-map.get(nums[i])<k
-*	- if yes return true
-*	- else update
-*
-*return false
- * 
- */
 	@Test
 	public static void Test1() {
-		int[] inputArray = {4, 2, -3, 1, 6};
+		int[] inputArr = {2,7,11,15};
+		int target = 9;
 		
-		boolean isPresent = findsubArray0Sum(inputArray);
-		System.out.println(isPresent);
-		
-	} 
+		System.out.println(Arrays.toString(distinctNums(inputArr,target)));
+	}
 	
 	@Test
 	public static void Test2() {
-		int[] inputArray = {4, 2, 0, 1, 6};
+		int[] inputArr = {2,3,4};
+		int target = 6;
 		
-		boolean isPresent = findsubArray0Sum(inputArray);
-		System.out.println(isPresent);
-		
-	} 
+		System.out.println(Arrays.toString(distinctNums(inputArr,target)));
+	}
+	
 	@Test
 	public static void Test3() {
-		int[] inputArray = {-3, 2, 3, 1, 6};
-		
-		boolean isPresent = findsubArray0Sum(inputArray);
-		System.out.println(isPresent);
-		
+		int[] inputArr = {-1,0};
+		int target = -1;
+		System.out.println(Arrays.toString(distinctNums(inputArr,target)));
 	}
 	@Test
 	public static void Test4() {
-		int[] inputArray = {0};
-		
-		boolean isPresent = findsubArray0Sum(inputArray);
-		System.out.println(isPresent);
-		
+		int[] inputArr = {5,25,75};
+		int target = 100;
+		System.out.println(Arrays.toString(distinctNums(inputArr,target)));
 	}
 	
-	public static boolean findsubArray0Sum(int[] nums) {
-	 
-	int sum = 0;
-	
-	HashMap<Integer, Integer> map = new HashMap<>();
-	
-	map.put(0, 1);
-	
-	for(int i=0;i<nums.length;i++){
+	public static int[] distinctNums(int[] nums, int target) {
 		
-		sum += nums[i];
+		HashMap<Integer,Integer> hashMap = new HashMap<>();
 		
-		if(map.containsKey(sum)) {
+		for (int i = 0; i<nums.length; i++){
 			
-			return true;
+			if(hashMap.containsKey(target-nums[i])) {
+				
+				return new int[] {hashMap.get(target-nums[i]),i};
+				
+			}
+			hashMap.put(nums[i], i);
 		}
-		map.put(sum, 1);
-
-		}
-		return false;
-}
+		
+		
+		return new int[] {-1,-1};
+	} 
+	
 }

@@ -1,10 +1,10 @@
-package week3Day2;
+package week3Day2HW;
 
 import java.util.HashMap;
 
 import org.testng.annotations.Test;
 
-public class FindSubArraywith0Sum {
+public class FindSmallestSubArraywith0Sum_MINLength {
 	/*
 	 * 
 	* 1) Did I understand the problem? -> If yes, go to next step !!
@@ -74,7 +74,7 @@ public class FindSubArraywith0Sum {
 	public static void Test1() {
 		int[] inputArray = {4, 2, -3, 1, 6};
 		
-		boolean isPresent = findsubArray0Sum(inputArray);
+		int isPresent = findsubArray0Sum(inputArray);
 		System.out.println(isPresent);
 		
 	} 
@@ -83,7 +83,7 @@ public class FindSubArraywith0Sum {
 	public static void Test2() {
 		int[] inputArray = {4, 2, 0, 1, 6};
 		
-		boolean isPresent = findsubArray0Sum(inputArray);
+		int isPresent = findsubArray0Sum(inputArray);
 		System.out.println(isPresent);
 		
 	} 
@@ -91,7 +91,7 @@ public class FindSubArraywith0Sum {
 	public static void Test3() {
 		int[] inputArray = {-3, 2, 3, 1, 6};
 		
-		boolean isPresent = findsubArray0Sum(inputArray);
+		int isPresent = findsubArray0Sum(inputArray);
 		System.out.println(isPresent);
 		
 	}
@@ -99,30 +99,40 @@ public class FindSubArraywith0Sum {
 	public static void Test4() {
 		int[] inputArray = {0};
 		
-		boolean isPresent = findsubArray0Sum(inputArray);
+		int isPresent = findsubArray0Sum(inputArray);
+		System.out.println(isPresent);
+		
+	}
+	@Test
+	public static void Test5() {
+		int[] inputArray = {15,-2,2,-8,1,7,10,23};
+		
+		int isPresent = findsubArray0Sum(inputArray);
 		System.out.println(isPresent);
 		
 	}
 	
-	public static boolean findsubArray0Sum(int[] nums) {
+	public static int findsubArray0Sum(int[] nums) {
 	 
-	int sum = 0;
-	
-	HashMap<Integer, Integer> map = new HashMap<>();
-	
-	map.put(0, 1);
-	
-	for(int i=0;i<nums.length;i++){
+		int sum = 0, minLen = Integer.MAX_VALUE; //check what should we return if no subarrays at all.
 		
-		sum += nums[i];
+		HashMap<Integer, Integer> map = new HashMap<>();
 		
-		if(map.containsKey(sum)) {
+		map.put(0, -1);
+		
+		for(int i=0;i<nums.length;i++){
 			
-			return true;
+			sum += nums[i];
+			
+			if(map.containsKey(sum)) {
+				
+				minLen = Math.min(minLen, i - map.get(sum));
+			}
+			else {
+			map.put(sum, i);
+			}
 		}
-		map.put(sum, 1);
+			return minLen;
+}
+}
 
-		}
-		return false;
-}
-}

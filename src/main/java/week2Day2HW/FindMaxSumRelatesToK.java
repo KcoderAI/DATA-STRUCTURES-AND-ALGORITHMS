@@ -151,9 +151,10 @@ public class FindMaxSumRelatesToK {
 			right--;
 			
 		}
-		//else if (inpArray[right] + inpArray[left] < k) {
+		
 		else {
 			
+		//Math.max(tempSum, (inpArray[right] + inpArray[left]));
 			if(tempSum < (inpArray[right] + inpArray[left])) {
 				
 			tempSum = inpArray[right] + inpArray[left];
@@ -172,7 +173,7 @@ public class FindMaxSumRelatesToK {
 }
 
 
-
+//else if (inpArray[right] + inpArray[left] < k) {
 
 
 
