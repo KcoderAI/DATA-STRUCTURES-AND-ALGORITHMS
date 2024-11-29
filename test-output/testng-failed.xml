@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="week3Day2HW.L724PivotIndex">
+      <class name="week3Day2HW.G_AlternatePositiveAndNegative">
         <methods>
           <include name="Test1"/>
         </methods>
-      </class> <!-- week3Day2HW.L724PivotIndex -->
+      </class> <!-- week3Day2HW.G_AlternatePositiveAndNegative -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
