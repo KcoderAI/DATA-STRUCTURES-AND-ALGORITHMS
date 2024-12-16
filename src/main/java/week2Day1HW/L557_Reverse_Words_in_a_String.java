@@ -66,7 +66,8 @@ public class L557_Reverse_Words_in_a_String {
 		String[] inpArray = s.split(" ");
 	
 		for (int i =0;i<inpArray.length;i++) {
-			inpArray[i] = reverseWord(inpArray[i]);
+		 	inpArray[i] = reverseWord(inpArray[i]);
+			
 		//	inpArray[i] = reverseWord(inpArray, i, end);
 		}
 				
@@ -74,7 +75,8 @@ public class L557_Reverse_Words_in_a_String {
 		
 	}
 	
-	public static String reverseWord(String S) {
+ 	public static String reverseWord(String S) {
+	 
 		
 		char temp ;
 		int len = S.length();
@@ -85,7 +87,7 @@ public class L557_Reverse_Words_in_a_String {
 			charArray[(len-1)-i] = temp; 
 		}
 				
-		return new String(charArray);
+	 	return new String(charArray);
 	}
 	
 /*public static String reverseWord(char[] words, int start, int end) {

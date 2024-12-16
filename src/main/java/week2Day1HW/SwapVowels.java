@@ -18,7 +18,7 @@ public class SwapVowels {
 	* 2) Test data set
 	* 
 	* Minimum of 3 data set !! 
-	* Positive, Edge, Negative
+	* Positive, Edge, Negativenb 
 	* 
 	* {1,5,3,3,4,6,7,7,8};
 	* 

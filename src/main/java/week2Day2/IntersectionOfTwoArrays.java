@@ -2,6 +2,8 @@ package week2Day2;
 
 import java.util.Arrays;
 
+import org.testng.annotations.Test;
+
 public class IntersectionOfTwoArrays {
 	/*
 	 * 
@@ -50,10 +52,16 @@ public class IntersectionOfTwoArrays {
 	* 
 	* 10) If it fails, debug them to solve it !!
 	* */
-	@org.testng.annotations.Test
-	public void Test() {
+	@Test
+	public void Test1() {
 		int[] nums1= {1,2,2,1};
 		int[] nums2 = {2,2};
+		System.out.println(Arrays.toString(intersection(nums1,nums2)));
+	}
+	@Test
+	public void Test2() {
+		int[] nums1= {1,2,2,1};
+		int[] nums2 = {2,2,1};
 		System.out.println(Arrays.toString(intersection(nums1,nums2)));
 	}
 	
@@ -82,7 +90,7 @@ public class IntersectionOfTwoArrays {
 		}
 		
 	
-		
+		//return output;
 		return Arrays.copyOfRange(output,0,k);
 	}
 	

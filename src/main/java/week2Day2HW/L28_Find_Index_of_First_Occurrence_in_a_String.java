@@ -108,7 +108,7 @@ public class L28_Find_Index_of_First_Occurrence_in_a_String {
 		
 		int s1p1 = 0 , s1p2 = 0;
 		int s2 = 0;
-		
+		//return haystack.indexOf(needle);
 		if(!haystack.contains(needle) || needle.length() == 0) { 
 			return -1;
 		}

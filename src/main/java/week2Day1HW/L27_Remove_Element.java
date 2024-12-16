@@ -1,5 +1,7 @@
 package week2Day1HW;
 
+import java.util.Arrays;
+
 import org.testng.annotations.Test;
 
 public class L27_Remove_Element {
@@ -108,8 +110,11 @@ public class L27_Remove_Element {
 				i++;
 			}
 		}
+		//Arrays.copyOfRange(nums, 0, i);
 		//Arrays.cop
+		System.out.println(Arrays.toString(nums));
 		return nums.length - count; //or use Arrays.copy
+		
 	}
 	
 		
@@ -117,7 +122,28 @@ public class L27_Remove_Element {
 
 
 
-
+/* this works but array is not sorted ,so need extra sort.to avoid used above method. without sort.
+ * int j = 0;
+		
+		if (nums.length == 0) {
+			return 0;
+		}
+		Arrays.sort(nums);
+		for (int i = 0; i<=nums.length-1; i++) {
+			if(nums[i]!= val) {
+				nums[j] = nums[i];
+				j++;
+				
+			}
+		}
+		
+		//for(int k=j; k<=nums.length-1;k++) {
+		//	nums[k] = 101;}
+		
+		System.out.println(Arrays.toString(nums));
+		
+	    return j;
+ */
 
 
 

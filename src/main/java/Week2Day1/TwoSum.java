@@ -53,7 +53,12 @@ public class TwoSum {
 	* 
 	* 10) If it fails, debug them to solve it !!
 	* */
-	
+	@Test
+	public static void Test0() {
+		int[] inputArr = {3,2,4};
+		int target = 6;
+		System.out.println(Arrays.toString(distinctNums(inputArr,target)));
+	}
 	@Test
 	public static void Test1() {
 		int[] inputArr = {2,7,11,15};
@@ -109,3 +114,5 @@ public class TwoSum {
 	
 
 }
+
+
