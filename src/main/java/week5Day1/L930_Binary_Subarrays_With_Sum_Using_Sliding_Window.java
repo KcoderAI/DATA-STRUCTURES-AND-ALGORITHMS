@@ -61,6 +61,17 @@ public class L930_Binary_Subarrays_With_Sum_Using_Sliding_Window {
 		
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static int findSubArrayZeroSum(int[] nums, int goal) {
 		int count = 0; 
 		int zeroSegmentLength = 0; 

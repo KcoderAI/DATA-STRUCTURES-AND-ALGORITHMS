@@ -39,7 +39,7 @@ public class FindMinSizeSubArraySum {
 
 	public static int minSubArray(int[] nums, int target) {
 		
-		int minLen = 10001;
+		int minLen = 100001;
 		
 		int p1=0,preSum=0;
 		
@@ -58,7 +58,7 @@ public class FindMinSizeSubArraySum {
 			}
 			
 		
-		if(minLen==10001){
+		if(minLen==100001){
 			minLen = 0;
 		}
 		
