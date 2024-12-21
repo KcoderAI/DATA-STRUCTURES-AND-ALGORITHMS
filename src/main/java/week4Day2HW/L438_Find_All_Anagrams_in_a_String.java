@@ -67,8 +67,9 @@ public class L438_Find_All_Anagrams_in_a_String {
 			 char leftChar = s.charAt(p1);
 			 if (asciiCount[leftChar - 'a'] >= 0) { 
 				 count++;
+				 asciiCount[leftChar - 'a']++; 
 			 } 
-			 asciiCount[leftChar - 'a']++; 
+			
 			 p1++; 
 			} 
 		 }

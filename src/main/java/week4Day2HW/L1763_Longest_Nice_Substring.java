@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class L1763_Longest_Nice_Substring {
 	/*
 	 * Input : String
-	 * Output : int (count of valid substrings)
+	 * Output : String - return longest nice string
 	 * Test Data:
 	 * Pseudocode:
 	 * 
@@ -35,7 +35,7 @@ public void Test3() {
 			System.out.println(longestNiceSubstring(s));
 		}
 
-public String longestNiceSubstring(String s) {
+/*public String longestNiceSubstring(String s) {
 	 int n = s.length();
 	 if (n < 2) 
 		 return ""; 
@@ -72,9 +72,9 @@ private boolean isNice(int[] lower, int[] upper) {
 	return true;
   }		
 }
-
-/* Alternate Solutions
- * 
+*/
+// Alternate Solutions
+ 
   public String longestNiceSubstring(String s) {
         if (s.length() < 2) return "";
 
@@ -94,5 +94,5 @@ private boolean isNice(int[] lower, int[] upper) {
         // If no breaking character is found, the entire string is nice
         return s;
     }
- */
+}
  

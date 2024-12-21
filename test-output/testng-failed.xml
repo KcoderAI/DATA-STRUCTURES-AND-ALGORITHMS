@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="week6Day2.L2073TimeNeededtoBuyTickets">
+      <class name="week4Day2HW.L1358_Number_of_Substrings_Containing_All_Three_Characters">
         <methods>
-          <include name="Test2"/>
-          <include name="Test1"/>
+          <include name="Test4"/>
         </methods>
-      </class> <!-- week6Day2.L2073TimeNeededtoBuyTickets -->
+      </class> <!-- week4Day2HW.L1358_Number_of_Substrings_Containing_All_Three_Characters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

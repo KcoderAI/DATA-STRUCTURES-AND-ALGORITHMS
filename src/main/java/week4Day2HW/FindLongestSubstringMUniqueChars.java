@@ -40,32 +40,41 @@ public class FindLongestSubstringMUniqueChars {
 		public static void Test1() {
 			String inpStr = "aabbcc";
 			int k =1;
-			String maxlen = findMaxSubStringMUniqueChar(inpStr,k);
-			System.out.println(maxlen);
+			String maxlenStr = findMaxSubStringMUniqueChar(inpStr,k);
+			System.out.println(maxlenStr);
 		}
 		@Test
 		public static void Test2() {
 			String inpStr = "aabbcc";
 			int k = 2;
-			String maxlen = findMaxSubStringMUniqueChar(inpStr,k);
-			System.out.println(maxlen);
+			String maxlenStr = findMaxSubStringMUniqueChar(inpStr,k);
+			System.out.println(maxlenStr);
 		}
 		
 		@Test
 		public static void Test3() {
 			String inpStr = "aabbcc";
 			int k = 3;
-			String maxlen = findMaxSubStringMUniqueChar(inpStr,k);
-			System.out.println(maxlen);
+			String maxlenStr = findMaxSubStringMUniqueChar(inpStr,k);
+			System.out.println(maxlenStr);
 		}
 		
 		@Test
 		public static void Test4() {
 			String inpStr = "aaabbb";
 			int k = 3;
-			String maxlen = findMaxSubStringMUniqueChar(inpStr,k);
-			System.out.println(maxlen);
+			String maxlenStr = findMaxSubStringMUniqueChar(inpStr,k);
+			System.out.println(maxlenStr);
 		}
+		
+		@Test
+		public static void Test5() {
+			String inpStr = "aabacbebebe";
+			int k = 3;
+			String maxlenStr = findMaxSubStringMUniqueChar(inpStr,k);
+			System.out.println(maxlenStr);
+		}
+		
 		public static String findMaxSubStringMUniqueChar(String s, int k) {
 			
 			if (s == null || k == 0) {

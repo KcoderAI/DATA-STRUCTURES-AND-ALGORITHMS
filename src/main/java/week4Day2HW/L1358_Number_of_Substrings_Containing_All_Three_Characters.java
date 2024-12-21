@@ -35,6 +35,11 @@ public class L1358_Number_of_Substrings_Containing_All_Three_Characters {
 		String s= "abc";
 		System.out.println(findSubstringWithABC(s));
 	}
+	@Test
+	public void Test4() {
+		String s= "abca";
+		System.out.println(findSubstringWithABC(s));
+	}
 	
 	public static int findSubstringWithABC(String s) {
 		
