@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-22T05:50:47 AEDT" name="Default suite" finished-at="2024-12-22T05:51:35 AEDT" duration-ms="48064">
+  <suite started-at="2024-12-22T17:42:27 AEDT" name="Default suite" finished-at="2024-12-22T17:42:27 AEDT" duration-ms="77">
     <groups>
     </groups>
-    <test started-at="2024-12-22T05:50:47 AEDT" name="Default test" finished-at="2024-12-22T05:51:35 AEDT" duration-ms="48064">
-      <class name="week7Day1.minCostRopeLen">
-        <test-method signature="Test1()[pri:0, instance:week7Day1.minCostRopeLen@41f69e84]" started-at="2024-12-22T05:50:47 AEDT" name="Test1" finished-at="2024-12-22T05:51:35 AEDT" duration-ms="48028" status="PASS">
+    <test started-at="2024-12-22T17:42:27 AEDT" name="Default test" finished-at="2024-12-22T17:42:27 AEDT" duration-ms="77">
+      <class name="Assessment2.Problem3_findStartAndEndPostn">
+        <test-method signature="Test1()[pri:0, instance:Assessment2.Problem3_findStartAndEndPostn@5167f57d]" started-at="2024-12-22T17:42:27 AEDT" name="Test1" finished-at="2024-12-22T17:42:27 AEDT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-      </class> <!-- week7Day1.minCostRopeLen -->
+        <test-method signature="Test2()[pri:0, instance:Assessment2.Problem3_findStartAndEndPostn@5167f57d]" started-at="2024-12-22T17:42:27 AEDT" name="Test2" finished-at="2024-12-22T17:42:27 AEDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:Assessment2.Problem3_findStartAndEndPostn@5167f57d]" started-at="2024-12-22T17:42:27 AEDT" name="Test3" finished-at="2024-12-22T17:42:27 AEDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method signature="Test4()[pri:0, instance:Assessment2.Problem3_findStartAndEndPostn@5167f57d]" started-at="2024-12-22T17:42:27 AEDT" name="Test4" finished-at="2024-12-22T17:42:27 AEDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4 -->
+      </class> <!-- Assessment2.Problem3_findStartAndEndPostn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

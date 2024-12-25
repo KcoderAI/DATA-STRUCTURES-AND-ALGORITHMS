@@ -38,13 +38,15 @@ public class L438_Find_All_Anagrams_in_a_String {
 	
 	public static List<Integer> findAllAnagrams(String s,String p) {
 		
-		
+
 		int p1 = 0, p2 = 0, count = p.length();
 		
 		 List<Integer> output = new ArrayList<>();
+		 
 		 int[] asciiCount = new int[26];
 		 
 		 for(char c: p.toCharArray()) {
+			 
 			 asciiCount[c-'a']++;
 			 
 		 }
@@ -56,6 +58,7 @@ public class L438_Find_All_Anagrams_in_a_String {
 						 
 			 }			 
 			 asciiCount[s.charAt(p2)-'a']--;
+			 
 			 p2++;
 		 
 			 if(count==0) {
@@ -64,17 +67,23 @@ public class L438_Find_All_Anagrams_in_a_String {
 		    }
 		 
 			 if (p2 - p1 == p.length()) { 
+				 
 			 char leftChar = s.charAt(p1);
+			 
 			 if (asciiCount[leftChar - 'a'] >= 0) { 
+				 
 				 count++;
-				 asciiCount[leftChar - 'a']++; 
+				 
 			 } 
-			
+			 
+			 asciiCount[leftChar - 'a']++; 
+			 
 			 p1++; 
 			} 
 		 }
 	
 		 return output;
+    
 			
 	}
 }

@@ -42,18 +42,18 @@ public class L69_Sqrtx {
             return 0;
         
 		}
-		int high = x, low = 1;
+		int high = x, low = 1;  
 		
 		while(low <= high) {
 			
-			int mid = (low+high)/2;
+			int mid = (low+high)/2;  
 			
 			//if(mid*mid == x)
 			
-			if(mid == (x/mid)) {
+			if(mid == (x/mid)) {  
 				return mid;
 			}
-			else if (mid > (x/mid) ) {
+			else if (mid > (x/mid) ) {   
 				high = mid - 1;
 			}
 			else {
